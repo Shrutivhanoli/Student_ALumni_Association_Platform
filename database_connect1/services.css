@@ -1,0 +1,40 @@
+#assignment{
+    width: 99%;
+    height: 450px;
+    background: linear-gradient(158deg, #3498db 50%, #bb1414 50%);
+    position: absolute;
+    left: 0.5%;
+
+}
+#title{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#box1{
+    height: 290px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    left: 70px;
+    top: 140px;
+    
+}
+#box2{
+    height: 290px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    left: 350px;
+    top: 140px;
+}
+#logo{
+    border-radius: 50%;
+    height: 80px;
+    border: 3px blue solid;
+    image-rendering:crisp-edges;
+}

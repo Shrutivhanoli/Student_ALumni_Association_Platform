@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events and Fundraising</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 2em;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        #events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .event {
+            background-color: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .event:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .event h2 {
+            background-color: #0056b3;
+            color: white;
+            padding: 1em;
+            margin: 0;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .event p {
+            padding: 1em;
+            font-size: 0.95em;
+        }
+
+        .donate-btn {
+            display: block;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            border: none;
+            padding: 0.75em;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 0 0 12px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .donate-btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #003366;
+            color: white;
+            margin-top: 2em;
+        }
+
+        footer p {
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Events and Fundraising</h1>
+        <p>Support our initiatives and make a difference in the community!</p>
+    </header>
+
+    <main>
+        <section id="events">
+            <article class="event">
+                <h2>Annual Alumni Meet</h2>
+                <p>Join us for a memorable evening where alumni reconnect and share their journeys. Support us to make this event grand and inspiring.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+            <article class="event">
+                <h2>Library Renovation</h2>
+                <p>Help us modernize our library with new technology and resources to create a better learning environment for our students.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+            <article class="event">
+                <h2>Student Scholarship Program</h2>
+                <p>Empower students by funding scholarships. Your contribution helps deserving students achieve their academic dreams.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+            <article class="event">
+                <h2>Sports Facility Upgrade</h2>
+                <p>Upgrade our sports facilities to encourage more students to participate in extracurricular activities and competitions.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+            <article class="event">
+                <h2>Green Campus Initiative</h2>
+                <p>Support our efforts to make the campus more sustainable with solar panels, recycling programs, and green landscaping.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+            <article class="event">
+                <h2>Research Funding</h2>
+                <p>Help our students and faculty pursue innovative research projects to tackle real-world challenges.</p>
+                <a class="donate-btn" href="donate2.html">Donate</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Fundraising. All rights reserved.</p>
+    </footer>
+</body>
+</html>

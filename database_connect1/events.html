@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Events</h1>
+    </header>
+    <p id="para">
+        "Life is about the moments that take your breath away, and these events are filled with those moments! Connect
+        with like-minded people, learn from the best, and build a network that lasts a lifetime.<b> Every event is a
+            new story waiting to be written—let’s write yours together!"</b>
+    </p>
+
+    <!-- Calendar -->
+    <div class="calendar">
+        <h2>Events Calendar</h2>
+        <input type="date" id="event-date" onchange="displayEventsByDate(this.value)">
+    </div>
+
+    <!-- Search Bar -->
+    <form id="search-form">
+        <label for="search"><i class="fas fa-search"></i></label>
+        <input type="search" id="search" placeholder="Search events...">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Events Container -->
+    <div id="events-container"></div>
+    <div class="create">
+        <a href="events-form.html"><button class="addEvent">Add Event</button></a>
+    </div>
+
+
+    <script src="c:\Users\HP\OneDrive\Desktop\event\events.js"></script>
+</body>
+
+</html>
