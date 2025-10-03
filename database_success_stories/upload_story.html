@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Alumni Success Story</title>
+</head>
+<body>
+    <h2 style="font-size: 35px;margin-left: 30px;">Add a New Success Story</h2>
+
+    <div style="height: 660px;width: 650px;background-color: rgb(243, 235, 235);box-shadow: 10px 10px 20px black;position: relative;left: 300px;top: 10px;">
+    <div style="width: 600px;position: relative;left:25px;top:25px;background-color:rgb(243, 235, 235);height: 600px;border:1px solid black">
+    <form action="store_story.php" method="post" enctype="multipart/form-data">
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Name:</label><br>
+        <input type="text" name="name" required style="border: none;border-bottom: 1px solid;height: 20px;position: relative;left: 90px;top: 15px;width: 400px;background-color:rgb(243, 235, 235) ;"><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">LinkedIn Profile (optional):</label><br>
+        <input type="text" name="linkedin" style="border: none;border-bottom: 1px solid;height: 20px;position: relative;left: 90px;top: 20px;width: 400px;background-color:rgb(243, 235, 235) ;"><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Instagram Profile (optional):</label><br>
+        <input type="text" name="instagram" style="border: none;border-bottom: 1px solid;height: 20px;position: relative;left: 90px;top: 20px;width: 400px;background-color:rgb(243, 235, 235) ;"><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Skills:</label><br>
+        <textarea name="skills" required style="border: none;border-bottom: 1px solid;height: 20px;position: relative;left: 90px;top: 15px;width: 400px;background-color:rgb(243, 235, 235) ;"></textarea><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Experience:</label><br>
+        <textarea name="experience" required style="border: none;border-bottom: 1px solid;height: 20px;position: relative;left: 90px;top: 15px;width: 400px;background-color:rgb(243, 235, 235) ;"></textarea><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Upload Image (optional):</label><br>
+        <input type="file" name="story_image" style="border: none;height: 20px;position: relative;left: 90px;top: 15px;width: 400px;background-color:rgb(243, 235, 235) ;"><br><br>
+
+        <label style="font-size: 20px;position: relative;left: 25px;top: 10px;">Date:</label><br>
+        <input type="date" name="date" required style="height: 20px;position: relative;left: 90px;top: 15px;width: 140px;background-color:rgb(243, 235, 235) ;"><br><br>
+
+        <input type="submit" name="submit" value="Add Story" style="position: relative;height: 25px;top: 25px;left: 450px;">
+    </form>
+</div>
+</div>
+
+<div style="height: 100px;width: 100%;background-color: aliceblue;">
+
+</div>
+</body>
+</html>

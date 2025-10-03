@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        /* General body styling */
+        body {
+            background-color: #e9f7fc;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Profile container styling with gradient border */
+        .profile-container {
+            max-width: 700px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 5px solid;
+            border-image-slice: 1;
+            border-width: 5px;
+            border-image-source: linear-gradient(135deg, #007bff, #28a745, #ffc107, #dc3545);
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #007bff;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Label styling */
+        label {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Form control styling with custom borders */
+        .form-control, .form-select {
+            margin-bottom: 15px;
+            padding: 12px;
+            border-radius: 6px;
+            border: 2px solid #ced4da;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Focus effect with colored border and shadow */
+        .form-control:focus, .form-select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+
+        /* Hover effect for input fields */
+        .form-control:hover, .form-select:hover {
+            border-color: #28a745;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Role dropdown with better spacing and gradient border */
+        .form-select {
+            appearance: none;
+            padding-right: 40px; /* For dropdown arrow */
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"%3E%3Cpath fill="%23007bff" d="M2 0L0 2h4L2 0z" /%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 12px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .profile-container {
+                margin: 20px;
+            }
+        }
+
+        /* Styling hover effects for the submit button */
+        input[type="submit"] {
+            background: linear-gradient(135deg, #007bff, #28a745);
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #0056b3, #218838);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1 class="text-center">Create/Update Profile</h1>
+        <form id="profileForm" action="/save-profile" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Your email" required>
+            </div>
+
+            <!-- Role dropdown with better spacing and styles -->
+            <div class="form-group">
+                <label for="role">Role</label>
+                <select id="role" name="role" class="form-select form-control" required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="alumni">Alumni</option>
+                    <option value="teacher">Teacher</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="contact_info">Contact Info</label>
+                <input type="text" id="contact_info" name="contact_info" class="form-control" placeholder="Phone or other contact">
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" class="form-control" placeholder="Write a brief bio about yourself..." rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education (optional)</label>
+                <textarea id="education" name="education" class="form-control" placeholder="Your education details..." rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="profession">Profession (if applicable)</label>
+                <input type="text" id="profession" name="profession" class="form-control" placeholder="Your current profession">
+            </div>
+
+            <div class="form-group">
+                <label for="achievements">Achievements (optional)</label>
+                <textarea id="achievements" name="achievements" class="form-control" placeholder="List your achievements..." rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="social_links">Social Media Links</label>
+                <textarea id="social_links" name="social_links" class="form-control" placeholder='{ "LinkedIn": "url", "Twitter": "url" }' rows="2"></textarea>
+            </div>
+
+            <div class="text-center">
+                <input type="submit" value="Save Profile">
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
