@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Job Opportunity</title>
+</head>
+<body>
+    <div style="background-color: rgb(231, 224, 224);width: 600px;height: 600px;position: relative;left: 300px;box-shadow: 10px 10px 10px black;">
+        <div style="background-color: rgb(231, 224, 224);width: 550px;height: 560px;position: relative;left: 25px;top: 20px;border: 1px solid black;">
+            <h2 style="position: relative;left: 90px;font-size: 25px;top: 10px;">Add a New Job Opportunity</h2>
+                <form action="store_job.php" method="post">
+                <label style="font-size: 20px;position: relative;left: 50px;top: 20px;">Company Name:</label><br>
+                <input type="text" name="company_name" required style="background-color: white;border: none;border-bottom: 1px solid black;height: 20px;width: 300px;position: relative;left: 100px;top: 30px;"><br><br>
+
+                <label  style="font-size: 20px;position: relative;left: 50px;top: 20px;">Job Position:</label><br>
+                <input type="text" name="job_position" required style="background-color: white;border: none;border-bottom: 1px solid black;height: 20px;width: 300px;position: relative;left: 100px;top: 30px;"><br><br>
+
+                <label  style="font-size: 20px;position: relative;left: 50px;top: 20px;">Skills Required:</label><br>
+                <textarea name="skills_required" required style="background-color: white;border: none;border-bottom: 1px solid black;height: 20px;width: 300px;position: relative;left: 100px;top: 30px;"></textarea><br><br>
+
+                <label  style="font-size: 20px;position: relative;left: 50px;top: 20px;">Payment:</label><br>
+                <input type="text" name="payment" required style="background-color: white;border: none;border-bottom: 1px solid black;height: 20px;width: 300px;position: relative;left: 100px;top: 30px;"><br><br>
+
+                <label  style="font-size: 20px;position: relative;left: 50px;top: 20px;">Link to Apply:</label><br>
+                <input type="text" name="apply_link" required style="background-color: white;border: none;border-bottom: 1px solid black;height: 20px;width: 300px;position: relative;left: 100px;top: 30px;"><br><br>
+
+                <input type="submit" name="submit" value="Add Job" style="height: 40px;position: relative;left: 250px;top: 50px;font-size: 15px;">
+            </form>
+            </div>
+    </div>
+    <div style="height: 100px;width: 100%;background-color: rgb(255, 255, 255);">
+
+    </div>
+    
+</body>
+</html>

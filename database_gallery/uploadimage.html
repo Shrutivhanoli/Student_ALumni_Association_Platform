@@ -1,0 +1,22 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
+<body>
+
+    <div style="height: 400px;width: 500px;border-radius: 30px;border: 1px solid black;position: absolute;left: 430px;top: 100px;">
+        <h2 style="margin-left: 150px;">Upload an Image</h2>
+        <hr style="width: 80%;margin-left: 10%;">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label style="margin-left: 80px;position: absolute;top: 140px;font-size: 22px;">Select Image:</label>
+            <input type="file" name="image" required style="position: absolute;top:140px ;left: 210px;font-size: 18px;">
+            <input type="submit" name="submit" value="Upload" style="position: absolute;left: 210px;top: 220px;font-size: 18px;">
+         </form>
+    </div>
+</body>
+</html>
