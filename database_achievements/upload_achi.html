@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student Achievement</title>
+</head>
+<body>
+
+    <div style="height: 150px;width: 100%;background-color: rgb(110, 91, 103);">
+        <img src="https://lh4.googleusercontent.com/proxy/O34Qwq3ihb0Zm6_jXd3P8IQ8s4HWOkqFCW-k9-uL_HnME3v9vXeobByOv46bHHlkPj9AlA" alt="image" style="height: 90px;position: absolute;left: 30px;top: 40px;">
+        <img src="https://www.shutterstock.com/image-vector/dark-blue-abstract-concept-polygonal-600nw-562046032.jpg" alt="image" style="height:150px;width: 100%;">
+        <h2 style="font-size: 40px;position: relative;left: 140px;top: -130px;width: 500px;color: white;">Add a  Achievement</h2>
+
+    </div>
+
+    <div style="height: 700px;width: 50%;position: relative;left: 25%;top: 80px;background-color: rgb(231, 231, 222);border: 0.1em solid ">
+    <form action="store_achievement.php" method="post" enctype="multipart/form-data">
+        <label style="font-size: 20px;margin-left: 50px;position: relative;top: 40px;">Student Name:</label><br>
+        <input type="text" name="student_name" required  style=" font-size: 20px;margin-left: 100px;border: none;border-bottom: 1px solid black;margin-top: 50px;width: 60%; "><br><br>
+
+        <label style="font-size: 20px;margin-left: 50px;position: relative;top: 40px;">Achievement Title:</label><br>
+        <input type="text" name="achievement_title" required style=" font-size: 20px;margin-left: 100px;border: none;border-bottom: 1px solid black;margin-top: 50px;width: 60%; "><br><br>
+
+        <label style="font-size: 20px;margin-left: 50px;position: relative;top: 40px;">Achievement Description:</label><br>
+        <textarea name="achievement_description" required style=" font-size: 20px;margin-left: 100px;border: none;border-bottom: 1px solid black;margin-top: 50px;width: 60%; "></textarea><br><br>
+
+        <label style="font-size: 20px;margin-left: 50px;position: relative;top: 40px;">Date Achieved:</label><br>
+        <input type="date" name="date_achieved" required style=" font-size: 20px;margin-left: 100px;border: none;border-bottom: 1px solid black;margin-top: 50px;width: 60%; "><br><br>
+
+        <label style="font-size: 20px;margin-left: 50px;position: relative;top: 40px;" >Achievement Image:</label><br>
+        <input type="file" name="achievement_image" style="position: relative;left: 320px;top: 20px; font-size: 16px;id:achievement_image" required><br><br>
+        
+        <input type="submit" name="submit" value="Add" style="position: relative;left: 570px;top: 90px;font-size: 18px;border: 1px solid rgb(0, 0, 0);border-radius: 5px;height: 29px;width: 60px;">
+    </form>
+    </div>
+    <div style="height: 200px;width: 100%;background-color: rgb(250, 249, 249);">
+
+    </div>
+
+</body>
+</html>
